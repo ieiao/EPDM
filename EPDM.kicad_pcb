@@ -1,7 +1,7 @@
 (kicad_pcb (version 20211014) (generator pcbnew)
 
   (general
-    (thickness 1.6)
+    (thickness 0.8)
   )
 
   (paper "A4")
@@ -38,6 +38,19 @@
   )
 
   (setup
+    (stackup
+      (layer "F.SilkS" (type "Top Silk Screen"))
+      (layer "F.Paste" (type "Top Solder Paste"))
+      (layer "F.Mask" (type "Top Solder Mask") (thickness 0.01))
+      (layer "F.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 1" (type "core") (thickness 0.71) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "B.Cu" (type "copper") (thickness 0.035))
+      (layer "B.Mask" (type "Bottom Solder Mask") (thickness 0.01))
+      (layer "B.Paste" (type "Bottom Solder Paste"))
+      (layer "B.SilkS" (type "Bottom Silk Screen"))
+      (copper_finish "None")
+      (dielectric_constraints no)
+    )
     (pad_to_mask_clearance 0)
     (pcbplotparams
       (layerselection 0x00010fc_ffffffff)
@@ -284,7 +297,7 @@
       (net 11 "Net-(C13-Pad1)") (pinfunction "1") (pintype "passive") (tstamp aef0d680-1831-4ecb-badd-761334da371f))
     (pad "2" smd rect (at 1.185 0 270) (size 0.98 3.4) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 1 "+3V3") (pinfunction "2") (pintype "passive") (tstamp d5d4a59a-15ef-462a-b870-fbdf6605453c))
-    (model "${KICAD6_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Coilcraft_XxL4020.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -498,10 +511,10 @@
       (net 2 "GND") (pinfunction "MountPin") (pintype "passive") (tstamp e1044c4b-1521-42ee-ba61-3720c28c4470))
     (pad "MP" smd rect (at -7.42 0.35 270) (size 2.3 3.1) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 2 "GND") (pinfunction "MountPin") (pintype "passive") (tstamp ee86febf-2bbe-4711-b482-c4905ed8f33e))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_FFC-FPC.3dshapes/TE_2-1734839-4_1x24-1MP_P0.5mm_Horizontal.wrl"
-      (offset (xyz 0 0 0))
+    (model "${KIPRJMOD}/3dmodels/TF31-24S-0.5SH_3d_stp.stp"
+      (offset (xyz -5.8 -0.3 3.9))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
@@ -813,7 +826,7 @@
       (net 27 "/EPD_CLK") (pinfunction "Pin_8") (pintype "passive") (tstamp cdc290cf-dc99-449d-89b5-b0c6486adfb4))
     (pad "9" thru_hole oval (at 0 10.16 180) (size 1 1) (drill 0.65) (layers *.Cu *.Mask)
       (net 28 "/EPD_DIN") (pinfunction "Pin_9") (pintype "passive") (tstamp 6b4e3228-8311-49e1-b6a3-88cd54654268))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_1.27mm.3dshapes/PinHeader_1x09_P1.27mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_1.27mm.3dshapes/PinHeader_1x09_P1.27mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
