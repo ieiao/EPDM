@@ -2017,7 +2017,7 @@
   )
 
   (symbol (lib_id "Device:C") (at 147.32 95.25 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom yes) (on_board no)
     (uuid 3deb2845-cd86-41e9-beb0-8b7589332f7a)
     (property "Reference" "C7" (id 0) (at 150.241 94.0816 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2752,7 +2752,7 @@
     (uuid f14b9c48-b14e-4abd-a69a-d0446c13d922)
     (property "Reference" "C12" (id 0) (at 214.63 85.09 0))
     (property "Value" "10uF/6V" (id 1) (at 217.17 87.63 0))
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 209.8548 82.55 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (id 2) (at 209.8548 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 210.82 86.36 0)
@@ -2921,7 +2921,7 @@
       (reference "C11") (unit 1) (value "1uF/6V") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/f14b9c48-b14e-4abd-a69a-d0446c13d922"
-      (reference "C12") (unit 1) (value "10uF/6V") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C12") (unit 1) (value "10uF/6V") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/38f52602-301f-4546-becb-9bd2b80145d8"
       (reference "C13") (unit 1) (value "4.7uF/50V") (footprint "Capacitor_SMD:C_0805_2012Metric")
